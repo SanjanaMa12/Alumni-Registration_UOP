@@ -5,7 +5,7 @@ function s_create_alumni_table() {
     $s_table_name = $wpdb->prefix . 's_alumni';
     $s_charset_collate = $wpdb->get_charset_collate();
 
-    // 1. Table එක නැත්නම් හදනවා
+    //If there is no table, let's create a table
     $s_sql = "CREATE TABLE $s_table_name (
         id mediumint(9) NOT NULL AUTO_INCREMENT,
         id_type varchar(20) NOT NULL,
@@ -19,7 +19,7 @@ function s_create_alumni_table() {
     require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
     dbDelta($s_sql);
 
-    // 2. Columns නැත්නම් අතින් add කරනවා
+    // If there are no columns, we can create it manually
     $columns = $wpdb->get_col("DESCRIBE {$s_table_name}", 0);
     if(!in_array('id_type', $columns)) {
         $wpdb->query("ALTER TABLE {$s_table_name} ADD id_type varchar(20) NOT NULL AFTER id");
