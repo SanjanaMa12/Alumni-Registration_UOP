@@ -8,8 +8,6 @@ function s_create_alumni_table() {
     //If there is no table, let's create a table
     $s_sql = "CREATE TABLE $s_table_name (
         id mediumint(9) NOT NULL AUTO_INCREMENT,
-        id_type varchar(20) NOT NULL,
-        id_number varchar(50) NOT NULL,
         full_name varchar(100) NOT NULL,
         email varchar(100) NOT NULL,
         graduation_year int(4) NOT NULL,
