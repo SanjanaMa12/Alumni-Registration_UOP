@@ -27,6 +27,7 @@ function s_create_alumni_table() {
     }
 }
 add_action('admin_init', 's_create_alumni_table');/**
+
  * Astra functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
