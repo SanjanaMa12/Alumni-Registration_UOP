@@ -16,15 +16,6 @@ function s_create_alumni_table() {
 
     require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
     dbDelta($s_sql);
-
-    // If there are no columns, we can create it manually
-    $columns = $wpdb->get_col("DESCRIBE {$s_table_name}", 0);
-    if(!in_array('id_type', $columns)) {
-        $wpdb->query("ALTER TABLE {$s_table_name} ADD id_type varchar(20) NOT NULL AFTER id");
-    }
-    if(!in_array('id_number', $columns)) {
-        $wpdb->query("ALTER TABLE {$s_table_name} ADD id_number varchar(50) NOT NULL AFTER id_type");
-    }
 }
 add_action('admin_init', 's_create_alumni_table');/**
 

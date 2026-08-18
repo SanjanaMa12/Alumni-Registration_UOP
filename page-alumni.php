@@ -6,7 +6,7 @@ Template Name: Alumni Registration
 get_header(); 
 
 global $wpdb;
-$s_table_name = $wpdb->prefix . 's_alumni'; // Table nameත් s_ වුනා
+$s_table_name = $wpdb->prefix . 's_alumni';
 
 $s_error = '';
 $s_success = '';
