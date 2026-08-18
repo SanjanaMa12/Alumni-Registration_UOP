@@ -30,7 +30,7 @@ Table 'wp\_s\_alumni' with fields: id, full\_name, email, graduation\_year
 
 \## ## Video Walkthrough
 
-I uploaded the video to YouTube.
+I uploaded the video to google drive.
 
-Watch here: https://youtu.be/ruv5nog241Q
+Watch here: https://drive.google.com/file/d/1GOcZeuX8bg-rke6y4Ishsl2e5EP7Qb-q/view?usp=drive\_link
 
