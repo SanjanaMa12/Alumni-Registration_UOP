@@ -1,18 +1,26 @@
-\# Alumni Registration UOP
+\# Alumni Registration UOP - Assessment
 
 Custom alumni registration form for the University of Peradeniya.
 
 
 
+
+
+\## AI Support Acknowledgement
+
+I used Meta AI to generate the initial PHP template structure, $wpdb->insert and $wpdb->get\_results queries, other codes and for debugging the database table creation. 
+
+I have reviewed, modified, and tested all code myself to meet the assessment requirements, including custom prefixing 's\_' and validation logic.
+
+
+
 \## Files
 
-\- `page-alumni.php` - Frontend registration form
-
-\- `functions.php` - Form handling and database setup
+'functions.php','page-alumni.php' - Custom page template with form, $wpdb insert, and data table
 
 
 
 \## Database
 
-Table `wp\_s\_alumni` is automatically created on theme activation
+Table 'wp\_s\_alumni' with fields: id, full\_name, email, graduation\_year
 
