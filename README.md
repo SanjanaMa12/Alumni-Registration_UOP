@@ -24,3 +24,13 @@ I have reviewed, modified, and tested all code myself to meet the assessment req
 
 Table 'wp\_s\_alumni' with fields: id, full\_name, email, graduation\_year
 
+
+
+
+
+\## ## Video Walkthrough
+
+I uploaded the video to YouTube.
+
+Watch here: https://youtu.be/ruv5nog241Q
+
